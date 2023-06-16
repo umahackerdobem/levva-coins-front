@@ -16,3 +16,7 @@
   <img align="center" alt="React" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
  <div align="center">
   <img align="center" alt="VS Code" width="90" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/images/logo@3x.png">
+
+<div align="center">
+ <img src="https://github.com/umahackerdobem/levva-coins-front/assets/89475607/e3622563-597e-4542-aff9-a402c69289aa" width="1000">
+<p/>
