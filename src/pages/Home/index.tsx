@@ -48,9 +48,8 @@ export function Home() {
 
             </tr>
           </thead>
-
           <tbody>
-            {(searchTransaction.length > 0 ? searchTransaction : transactions).map(transaction => (
+          { transactions.map(transaction => (
             <tr key={transaction.id}>
               <td width="50%">{transaction.description}</td>
               <td>
@@ -64,6 +63,23 @@ export function Home() {
             </tr>
             ))}
           </tbody>
+          
+
+          {/* <tbody>
+            {(searchTransaction.length > 0 ? searchTransaction : transactions).map(transaction => (
+            <tr key={transaction.id}>
+              <td width="50%">{transaction.description}</td>
+              <td>
+                <PriceHighLight 
+                variant={transaction.type == 0 ? "income" : "outcome"}>
+                  {money.format(transaction.value)}
+                  </PriceHighLight>
+              </td>
+              <td>{transaction.category.description}</td>
+              <td>{transaction.date}</td>
+            </tr>
+            ))}
+          </tbody> */}
         </TransactionsTable>
         {!isLoading && transactions.length == 0 && (
         <TransactionsTableEmpty>
