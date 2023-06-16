@@ -24,7 +24,7 @@ export function SearchForm({ onSearch }: any) {
 })
 
 const handleSearch = ({ search }: formData) => {
-
+  console.log(search)
     SearchTransactionsUseCase.execute(search ? search.trim() : null);
 
 }
